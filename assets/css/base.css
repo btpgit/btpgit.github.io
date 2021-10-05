@@ -1,0 +1,17 @@
+body {
+	padding: 30px;
+}
+.active {
+	font-weight: bold;
+}
+nav.main-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav.main-nav ul li{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin-right: 10px;
+}

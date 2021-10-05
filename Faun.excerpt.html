@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tor - Films</title>
+		<link rel="shortcut icon" href="assets/favicon.ico">
+		<!-- -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+		<link href="http://vjs.zencdn.net/5.4.6/video-js.css" rel="stylesheet">
+	  <!-- If you'd like to support IE8 -->
+	  <script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
+		<style>
+			body {
+				background-color: white;
+				font-family: Arial;
+				font-size: 0.7em;
+			}
+
+			#videos {
+			   width:  900px;
+			   height: 506px;
+			   position: absolute;
+			   left: 50%;
+			   top: 50%;
+			   margin-left: -450px;
+			   margin-top: -253px;
+			}
+
+			#my_video, #my_video_0, #my_video_1, #my_video_2, #my_video_3, #my_video_4, #example_video_1 {
+				margin-bottom: 120px;
+			}
+
+			#videos {
+				padding-bottom: 800px;
+			}
+
+			div.video-js div.vjs-control-bar button.vjs-fullscreen-control {
+				display: none;
+			}
+
+			div.video-js div.vjs-control-bar div.vjs-remaining-time {
+				display: none;
+			}
+
+			div.video-js div.vjs-control-bar div.vjs-progress-control {
+				display: none;
+			}
+
+			div.video-js div.vjs-control-bar div.vjs-volume-menu-button {
+				display: none;
+			}
+
+			div.video-js button.vjs-big-play-button, div.video-js:hover button.vjs-big-play-button {
+				position: relative;
+		    left: -41px;
+		    top: 588px;
+		    -webkit-border-radius: 0px;
+		    -moz-border-radius: 0px;
+		    border-radius: 0px;
+		    background-color: #fff;
+		    color: #444;
+		    font-size: 3.2em;
+			}
+
+			div.video-js div.vjs-control-bar {
+				bottom: -135px;
+				background-color: #FFF;
+				color: #555;
+				font-size: 1.75em;
+		    left: -28px;
+			}
+		</style>
+	</head>
+	<body class="">
+		<div id="videos">
+			<!--<video id="example_video_1" class="video-js vjs-default-skin"
+				controls preload="none" width="1200" height="675" data-setup='{"example_option":true}'>
+				<source src="bjarni-quality-qt.mp4" type='video/mp4' />
+				<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+			</video>-->
+
+			<video id="my_video_1" class="video-js" controls loop preload="true" width="900" height="506" data-setup="{}">
+				<source src="http://labrador.is/media/tor/top_pass2-macos.m4v" type='video/mp4' />
+				<!--<source src="http://labrador.is/media/tor/top_pass2.webm" type='video/webm' />-->
+		    <p class="vjs-no-js">
+		      To view this video please enable JavaScript, and consider upgrading to a web browser that
+		      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+		    </p>
+		  </video>
+
+			<!--<video id="my_video_2" class="video-js vjs-default-skin" controls
+			  width="1200" height="675" data-setup='{"example_option":true}'>
+			  	<source src="output2-2new.webm" type='video/webm' />
+				<source src="output2-2new.mp4" type='video/mp4' />
+			  	<source src="output2-2new.webm" type='video/webm' />
+				<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+			</video>-->
+			<br><br><br><br><br><br><br>
+
+			<p>Faun / 2012 / Bjarni Tor Petursson</p>
+			<!--<p>17 minute film projected on matt, black painted surface.</p>-->
+		</div>
+
+<script src="http://vjs.zencdn.net/5.4.6/video.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-5377413-9');ga('send','pageview');
+</script>
+
+<script>
+	var video = document.getElementById('my_video_1');
+	video.volume = 0.65;
+	document.getElementsByTagName("video")[0].addEventListener('loadedmetadata', function() {
+		var dur = this.duration;
+	  	this.currentTime = Math.random()*dur;
+	}, false);
+</script>
+
+	</body>
+</html>

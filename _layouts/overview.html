@@ -1,0 +1,179 @@
+---
+layout: default_arrow
+---
+
+{{ content }}
+
+<div id="overview">
+
+<div id="over_group1">
+	<a href="http://bjarnitorpetursson.com/Facade1.excerpt.html" class="over_group1 hidden">
+		<div class="hf">
+		<video muted autoplay preload='none'>
+		<!--<source src="/media/examples/flower.webm"
+				type="video/webm">-->
+		<source src="http://labrador.is/media/media/videos1/500x/vid1-low.mp4"
+				type="video/mp4">
+		Sorry, your browser doesn't support embedded videos.
+		</video>
+		</div>
+	</a>
+
+	<a href="http://bjarnitorpetursson.com/Faun.excerpt.html" class="over_group1 hidden">
+		<div class="hf">
+		<video muted autoplay preload='none'>
+		<!--<source src="/media/examples/flower.webm"
+				type="video/webm">-->
+		<source src="http://labrador.is/media/media/videos1/500x/top_pass2.mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
+	</div>
+</a>
+
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 1 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+<div id="over_group2">
+	<a href="http://bjarnitorpetursson.com/Facade2.excerpt.html" class="over_group2 hidden">
+		<div class="hf">
+		<video muted autoplay preload='none'>
+		<!--<source src="/media/examples/flower.webm"
+				type="video/webm">-->
+		<source src="http://labrador.is/media/media/videos1/500x/vid2-low.mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
+</div></a>
+
+<a class="special one over_group2 hidden" href="http://bjarnitorpetursson.com/FadeFromBlack.html">
+	<div class="hf">
+	<video id="s1" muted autoplay preload='none'>
+	<source src="http://labrador.is/media/media/tor/bjarni-quality-qt.mp4#t=360">
+	Sorry, your browser doesn't support embedded videos.
+</video></div></a>
+
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 2 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+<div id="over_group3">
+	<a href="http://bjarnitorpetursson.com/Hubris.excerpt.html" class="over_group3 hidden">
+		<div class="hf">
+		<video muted autoplay preload='none'>
+		<!--<source src="/media/examples/flower.webm"
+				type="video/webm">-->
+		<source src="http://labrador.is/media/media/videos1/500x/vid4-high.mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
+	</div>
+</a>
+
+<!--<a class="special two over_group3 hidden" href="http://bjarnitorpetursson.com/FadeFromBlack.html">
+	<div class="hf">
+	<video id="s2" muted autoplay preload='none'>
+		<source src="http://labrador.is/media/media/tor/bjarni-quality-qt.mp4#t=360">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
+</div></a>-->
+
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 3 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+<div id="over_group4">
+
+	<a href="http://bjarnitorpetursson.com/NextRoomHarp.excerpt.html" class="over_group3 hidden">
+		<div class="hf">
+		<video muted autoplay preload='none'>
+		<!--<source src="/media/examples/flower.webm"
+				type="video/webm">-->
+		<source src="http://labrador.is/media/media/videos1/500x/vid3-low.mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
+</div></a>
+
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 4 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+<div id="over_group5">
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 5 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+<div id="over_group6">
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 6 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+<div id="over_group7">
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 7 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+<div id="over_group8">
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 8 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+<div id="over_group9">
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 9 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+<div id="over_group10">
+{% assign sorted_works = (site.works | sort: 'over_weight')%}
+{% for work in sorted_works %}
+{% if work.overview_group == 10 %}
+{% assign i = work.image_in_overview | minus:1 %}
+	<a href="{{ work.url | relative_url }}" class="over_group{{work.overview_group}}"><div class="hf"><img src="{{ (work.Items[i].image | replace: "/uploads/", "/uploads/thumbs/") | relative_url  }}"></div></a><br><br>
+{% endif %}
+{% endfor %}
+</div>
+
+</div>

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% assign page_width = page.width %}
+{% if page_width == null %}
+	{% assign page_width = 900 %}
+{% endif %}
+
+
+<a id="back_home" href="{{ "/" | relative_url }}"><</a>
+<div class="work" style="max-width: {{page_width}}px">
+	{% for p in page.Items %}
+	<div class="item">
+		<img src="{{p.image}}">
+		{% if p.description != null %}
+		<p>{{ p.description | markdownify }}</p>
+		{% elsif page.default_description != null %}
+		<p>{{ page.default_description | markdownify }}</p>
+		{% endif %}
+	</div>
+	{% endfor %}
+
+	{% if page.Items.size > 1 %}
+	<div class="img_nav">
+	{% for p in page.Items %}<img src="{{p.image}}" style="width: calc({{ 100.0 | divided_by:page.Items.size }}% - 10px)">{% endfor %}
+	</div>
+	{% endif %}
+
+	{{ content }}
+</div>

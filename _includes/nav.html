@@ -1,0 +1,31 @@
+<nav class="main-nav">
+  <ul>
+    {% assign navigation_pages = site.works | sort: 'navigation_weight' %}
+        <li class="space3">
+          <a href="{{ "/" | relative_url }}" {% if "/" == page.url %}class="active"{% endif %}>
+            Bjarni Þór Pétursson <span style="display: none;">Bjarni Tor Petursson</span>
+          </a>
+        </li>
+    {% for p in navigation_pages %}
+      {% if p.navigation_weight %}
+        <li class="space{{p.navigation_space}}">
+          <a href="{{ p.url | relative_url }}" {% if p.url == page.url %}class="active"{% endif %}>
+            {{ p.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+        <li class="space0" style="padding-top: 10px;">
+          <a href="{{ "/cv" | relative_url }}" {% if "/cv/" == page.url %}class="active"{% endif %}>
+            cv
+          </a>
+        </li>
+        <li class="space0">
+          <a href="{{ "/contact" | relative_url }}" {% if "/contact/" == page.url %}class="active"{% endif %}>
+            contact
+          </a>
+        </li>
+  </ul>
+</nav>
+
+<a id="back_home" href="{{ "/" | relative_url }}"><</a>

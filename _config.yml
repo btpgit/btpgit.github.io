@@ -1,0 +1,41 @@
+---
+title: Bjarni Þór Pétursson
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  works:
+    title: Works
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: works
+  values:
+    layout: work
+    width: 900
+    image_in_overview: 1
+    navigation_space: 1
+    navigation_weight: 0
+    default_description: ''
+    overview_group: 1
+    over_weight: 1
+    Items:
+    - image: ''
+      description: ''
+permalink: pretty

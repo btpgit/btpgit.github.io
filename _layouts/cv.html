@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<a id="back_home" href="{{ "/" | relative_url }}"><</a>
+{{ content }}
+
+<br>
+EDUCATION<br><br>
+<table>
+{% for e in page.education reversed %}
+  <tr>
+    <th>{{ e.description | markdownify }}</th>
+  </tr>
+{% endfor %}
+</table>
+
+<br>
+SELECTED EXHIBITIONS<br><br>
+<table>
+{% for e in page.exhibitions reversed %}
+  <tr>
+    <th>{{e.year}}</th>
+    <th>{{e.description | markdownify }}</th>
+  </tr>
+{% endfor %}
+</table>
+
+<br>
+PUBLICATIONS<br><br>
+<table>
+{% for e in page.publications reversed %}
+  <tr>
+    <th>{{e.year}}</th>
+    <th>{{e.description | markdownify }}</th>
+  </tr>
+{% endfor %}
+</table>
+
+<br>
+GRANTS AND STIPENDIUM<br><br>
+<table>
+{% for e in page.grants reversed %}
+  <tr>
+    <th>{{e.year}}</th>
+    <th>{{e.description | markdownify }}</th>
+  </tr>
+{% endfor %}
+</table>
+
+<br>
+TEACHING EXPERIENCE<br><br>
+<table>
+{% for e in page.teach reversed %}
+  <tr>
+    <th>{{e.year}}</th>
+    <th>{{e.description | markdownify }}</th>
+  </tr>
+{% endfor %}
+</table>

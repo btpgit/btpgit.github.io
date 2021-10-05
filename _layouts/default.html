@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bjarni Þór Pétursson</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+
+        <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | relative_url }}">
+        <link rel="stylesheet" href="{{ "/assets/css/skeleton.css" | relative_url }}">
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+        <link rel="stylesheet" href="{{ "/assets/css/nouwiki.css" | relative_url }}">
+        <link rel="stylesheet" href="{{ "/assets/css/base.css" | relative_url }}">
+        <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+        <script src="{{ "/assets/js/vendor/modernizr-2.8.3.min.js" | relative_url }}"></script>
+    </head>
+    <body class="markup-body">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+	   {% include nav.html %}
+        
+        {{ content }}
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ "/assets/js/vendor/jquery-1.12.0.min.js" | relative_url }}"><\/script>')</script>
+        <script src="{{ "/assets/js/plugins.js" | relative_url }}"></script>
+        <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+
+        {% include googleanalytics.html %}
+    </body>
+</html>

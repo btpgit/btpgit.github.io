@@ -1,0 +1,71 @@
+.hide {
+  display: none;
+}
+.show {
+  display: inline;
+}
+.show-inherit {
+  display: inherit;
+}
+.show-initial {
+  display: initial;
+}
+.show-block {
+  display: block;
+}
+.show-inline {
+  display: inline;
+}
+.show-inline-block {
+  display: inline-block;
+}
+.show-table {
+  display: table;
+}
+
+/* Makes the element completely invisible
+and un-interactable, but still takes space */
+.disable {
+  visibility: hidden;
+  opacity: 0.0;
+  z-index: -15000000; /* https://stackoverflow.com/questions/491052/minimum-and-maximum-value-of-z-index?rq=1 */
+  pointer-events: none;
+  user-select: none;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Background image fill/cover */
+.fill {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+
+/* Make images in text fit in with the text (like emojis) */
+img.inline, img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+   background-color: transparent !important;
+}
+
+/* Taken from Pixel Joint */
+.pixel {
+  image-rendering:optimizeSpeed;             /* Legal fallback */
+  image-rendering:-moz-crisp-edges;          /* Firefox        */
+  image-rendering:-o-crisp-edges;            /* Opera          */
+  image-rendering:-webkit-optimize-contrast; /* Safari         */
+  image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+  image-rendering:crisp-edges;               /* CSS4 Proposed  */
+  image-rendering:pixelated;                 /* CSS4 Proposed  */
+  -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+}
